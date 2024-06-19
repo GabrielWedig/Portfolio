@@ -1,14 +1,12 @@
 export const colors = {
   purple: {
-    dark: '#090d16',
-    light: '#14142c',
-    main: '#7949d',
-    secondary: '#432c7c'
+    dark: 'rgb(9, 14, 22)',
+    main: 'rgb(123, 74, 226)',
+    main5: 'rgba(123, 74, 226, 0.05)',
+    main50: 'rgba(123, 74, 226, 0.5)'
   },
   white: {
-    main: '#ffffff'
-  },
-  gray: {
-    main: '#85868a'
+    main: 'rgb(255, 255, 255)',
+    main5: 'rgba(255, 255, 255, 0.5)'
   }
 }

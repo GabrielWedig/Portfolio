@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import { colors } from '../../constants/colors'
-import { Container } from '../../components/container/Container'
+import { colors } from '../../constants'
+import { Container } from '../../components'
 
 export const Home = styled(Container)`
   background-color: ${colors.purple.dark};
   width: 100vw;
-  padding-top: 50px;
+  padding-top: 30px;
 `

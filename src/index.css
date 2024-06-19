@@ -1,10 +1,11 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 button,
 a {
   cursor: pointer;
+  font-family: 'Raleway', sans-serif;
 }
