@@ -8,4 +8,5 @@ button,
 a {
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
+  text-decoration: none;
 }

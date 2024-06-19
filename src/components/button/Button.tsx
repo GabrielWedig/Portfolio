@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode } from 'react'
 import * as S from './style'
 
-type ButtonTypes = 'transparent'
+type ButtonTypes = 'transparent' | 'primary'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode
@@ -9,12 +9,13 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const buttons = {
-  transparent: S.TransparentBtn
+  transparent: S.TransparentBtn,
+  primary: S.PrimaryBtn
 }
 
 export const Button = ({
   children,
-  buttonType = 'transparent',
+  buttonType = 'primary',
   ...rest
 }: ButtonProps) => {
   const Component = buttons[buttonType]

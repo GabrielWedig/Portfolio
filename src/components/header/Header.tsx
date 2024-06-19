@@ -6,11 +6,30 @@ export const Header = () => {
     <S.Header>
       <img src="" alt="" />
       <S.Navigation>
-        <Button onClick={() => console.log('Home')}>Home</Button>
-        <Button onClick={() => console.log('Projetos')}>Projetos</Button>
-        <Button onClick={() => console.log('Tecnologias')}>Tecnologias</Button>
-        <Button onClick={() => console.log('Carreira')}>Carreira</Button>
-        <Button onClick={() => console.log('Contato')}>Contato</Button>
+        <Button buttonType="transparent" onClick={() => console.log('Home')}>
+          Home
+        </Button>
+        <Button
+          buttonType="transparent"
+          onClick={() => console.log('Projetos')}
+        >
+          Projetos
+        </Button>
+        <Button
+          buttonType="transparent"
+          onClick={() => console.log('Tecnologias')}
+        >
+          Tecnologias
+        </Button>
+        <Button
+          buttonType="transparent"
+          onClick={() => console.log('Carreira')}
+        >
+          Carreira
+        </Button>
+        <Button buttonType="transparent" onClick={() => console.log('Contato')}>
+          Contato
+        </Button>
       </S.Navigation>
     </S.Header>
   )

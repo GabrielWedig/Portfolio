@@ -1,4 +1,4 @@
-import { About } from '.'
+import { About, Projects } from '.'
 import { Header } from '../../components'
 import * as S from './style'
 
@@ -7,6 +7,7 @@ export const Home = () => {
     <S.Home>
       <Header />
       <About />
+      <Projects />
     </S.Home>
   )
 }
