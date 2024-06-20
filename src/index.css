@@ -4,6 +4,10 @@
   font-family: 'Raleway', sans-serif;
 }
 
+body {
+  background-color: rgb(9, 14, 22);
+}
+
 button,
 a {
   cursor: pointer;

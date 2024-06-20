@@ -1,0 +1,47 @@
+[
+  {
+    "id": 0,
+    "isFront": true,
+    "title": "GitHub API",
+    "description": "Chamada de API para o site GitHub.",
+    "repo": "https://github.com/GabrielWedig/GitHubApi",
+    "photo": "",
+    "technologies": ["Javascript", "CSS", "HTML"]
+  },
+  {
+    "id": 1,
+    "isFront": true,
+    "title": "Pexels API",
+    "description": "Chamada de API para o site Pexels.",
+    "repo": "https://github.com/GabrielWedig/PexelsApi",
+    "photo": "",
+    "technologies": ["Javascript", "SCSS", "HTML"]
+  },
+  {
+    "id": 2,
+    "isFront": true,
+    "title": "Your Drink",
+    "description": "Site para fazer pedido de bebidas. Participei do projeto como Dev Front-End juntamente com meu amigo Willian Botelho.",
+    "repo": "https://github.com/GabrielWedig/YourDrink",
+    "photo": "",
+    "technologies": ["Typescript", "CSS", "HTML"]
+  },
+  {
+    "id": 3,
+    "isFront": false,
+    "title": "BarberTech API",
+    "description": "API completa para uma barbearia fictícia, podendo marcar cortes, adicionar serviços e estabelecimentos. Participei como Dev Full-Stack juntamente com meu amigo Douglas Zucolotto",
+    "repo": "https://github.com/GabrielWedig/BarberTechApi",
+    "photo": "",
+    "technologies": ["C#", "Entity Framework", ".NET", "PostgreSQL"]
+  },
+  {
+    "id": 4,
+    "isFront": true,
+    "title": "BarberTech APP",
+    "description": "Landing Page para uma barbearia fictícia + marcação de cortes e administração. Participei como Dev Full-Stack juntamente com meu amigo Douglas Zucolotto",
+    "repo": "https://github.com/GabrielWedig/BarberTechApp",
+    "photo": "",
+    "technologies": ["Typescript", "StyledComponents", "Axios"]
+  }
+]

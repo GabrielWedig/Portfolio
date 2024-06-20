@@ -23,16 +23,13 @@ export const PrimaryBtn = styled.button`
   align-items: center;
   gap: 10px;
   transition: all 0.3s ease;
+  color: ${colors.purple.main50};
+  font-size: 0.95rem;
+  font-weight: 600;
 
   svg {
     color: ${colors.purple.main50};
     font-size: 1.2rem;
-  }
-
-  span {
-    color: ${colors.purple.main50};
-    font-size: 0.95rem;
-    font-weight: 600;
   }
 
   &:hover {
