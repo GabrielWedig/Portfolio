@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { colors } from '../../../constants'
 
 export const Presentation = styled.section`
-  padding: 100px 0;
+  padding: 50px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;

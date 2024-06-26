@@ -1,22 +1,16 @@
 import styled from 'styled-components'
 import { colors } from '../../../constants'
 
-export const Projects = styled.section`
+export const Videos = styled.section`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 50px 0;
-`
-
-export const TitleBox = styled.div`
-  display: flex;
-  gap: 20px;
-  margin-bottom: 50px;
 
   h2 {
     font-size: 3rem;
     color: ${colors.white.main};
     margin-right: auto;
+    margin-bottom: 50px;
   }
 `
 

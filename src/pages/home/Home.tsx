@@ -1,4 +1,4 @@
-import { About, Projects } from '.'
+import { About, Projects, Skills, Videos } from '.'
 import { Header } from '../../components'
 import * as S from './style'
 
@@ -8,6 +8,8 @@ export const Home = () => {
       <Header />
       <About />
       <Projects />
+      <Videos />
+      <Skills />
     </S.Home>
   )
 }

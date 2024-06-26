@@ -7,6 +7,9 @@ export const TransparentBtn = styled.button`
   color: ${colors.white.main5};
   font-size: 1rem;
   transition: color 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   &:hover {
     color: ${colors.purple.main};
