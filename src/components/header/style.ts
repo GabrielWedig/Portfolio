@@ -8,6 +8,7 @@ export const Header = styled.header`
   padding: 10px 50px;
   border-radius: 10px;
   font-size: 18px;
+  margin: 20px 0;
 `
 
 export const Navigation = styled.header`

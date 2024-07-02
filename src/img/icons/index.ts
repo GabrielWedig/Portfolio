@@ -1,6 +1,5 @@
 export { default as Arduino } from './Arduino.svg'
 export { default as AzureDevops } from './Azure Devops.svg'
-export { default as Bootstrap } from './Bootstrap.svg'
 export { default as CSharp } from './CSharp.svg'
 export { default as CSS } from './CSS3.svg'
 export { default as Docker } from './Docker.svg'

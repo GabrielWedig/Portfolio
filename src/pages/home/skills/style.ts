@@ -20,7 +20,7 @@ export const Skills = styled.section`
 
 export const Techs = styled.div`
   display: flex;
-  gap: 10px;
+  gap: 20px;
 
   img {
     width: 80px;

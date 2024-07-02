@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 import { colors } from '../../../constants'
+import { Container } from '../../../components'
 
-export const Presentation = styled.section`
-  padding: 50px 0;
+export const Presentation = styled(Container)`
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 100px;
+  margin: 50px 0;
 `
 
 export const Infos = styled.article`
@@ -17,11 +18,11 @@ export const Infos = styled.article`
   p {
     color: ${colors.white.main5};
   }
-`
 
-export const Name = styled.h1`
-  font-size: 3rem;
-  color: ${colors.white.main};
+  h1 {
+    font-size: 3rem;
+    color: ${colors.white.main};
+  }
 `
 
 export const Occupation = styled.div`

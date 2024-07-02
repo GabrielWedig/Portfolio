@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 import { colors } from '../../../constants'
+import { Container } from '../../../components'
 
-export const Projects = styled.section`
+export const Projects = styled(Container)`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 50px 0;
+  margin: 50px 0;
 `
 
 export const TitleBox = styled.div`

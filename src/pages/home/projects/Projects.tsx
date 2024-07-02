@@ -24,9 +24,9 @@ export const Projects = () => {
       <S.ProjectsBox>
         {projects
           .filter((p) => p.isFront === isFront)
-          .map((p, index) => (
+          .map((p) => (
             <Project
-              key={index}
+              key={p.id}
               title={p.title}
               description={p.description}
               repo={p.repo}

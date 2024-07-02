@@ -10,7 +10,7 @@ export const About = () => {
       {/* <S.Photo src={Photo} alt="Gabriel's photo" /> */}
       <S.Infos>
         <Chip>👋 Saudações!</Chip>
-        <S.Name>Gabriel Garcia Wedig</S.Name>
+        <h1>Gabriel Garcia Wedig</h1>
         <S.Occupation>
           <span>Desenvolvedor Full-Stack</span>
           <a href={refs.github} target="_blank">

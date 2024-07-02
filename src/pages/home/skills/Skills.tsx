@@ -3,7 +3,6 @@ import * as S from './style'
 import {
   Arduino,
   AzureDevops,
-  Bootstrap,
   CSharp,
   CSS,
   Docker,
@@ -42,7 +41,6 @@ export const Skills = () => {
       <span>Já realizei projetos</span>
       <S.Techs>
         <img src={Arduino} />
-        <img src={Bootstrap} />
         <img src={Docker} />
         <img src={Java} />
         <img src={MongoDB} />
