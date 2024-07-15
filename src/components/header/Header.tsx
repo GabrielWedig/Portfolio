@@ -4,19 +4,17 @@ import { scrollToSection } from '../../utils'
 import * as S from './style'
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
+import { useTheme } from '../../hooks'
 
-interface HeaderProps {
-  isDark: boolean
-  setTheme: (isDark: boolean) => void
-}
-
-export const Header = ({ isDark, setTheme }: HeaderProps) => {
+export const Header = () => {
   const [isPortuguese, setIsPortuguese] = useState<boolean>(true)
-  const { t, i18n } = useTranslation()
 
-  const setLanguage = (isPortuguese: boolean) => {
-    i18n.changeLanguage(isPortuguese ? 'pt' : 'en')
-    setIsPortuguese(isPortuguese)
+  const { t, i18n } = useTranslation()
+  const { isDark, changeTheme } = useTheme()
+
+  const changeLanguage = (toPortuguese: boolean) => {
+    i18n.changeLanguage(toPortuguese ? 'pt' : 'en')
+    setIsPortuguese(toPortuguese)
   }
 
   return (
@@ -54,28 +52,28 @@ export const Header = ({ isDark, setTheme }: HeaderProps) => {
         <S.Buttons>
           <Button
             btnType="transparent"
-            onClick={() => setTheme(false)}
+            onClick={() => changeTheme(false)}
             isActive={!isDark}
           >
             <LightMode />
           </Button>
           <Button
             btnType="transparent"
-            onClick={() => setTheme(true)}
+            onClick={() => changeTheme(true)}
             isActive={isDark}
           >
             <DarkMode />
           </Button>
           <Button
             btnType="transparent"
-            onClick={() => setLanguage(false)}
+            onClick={() => changeLanguage(false)}
             isActive={!isPortuguese}
           >
             <span>EN</span>
           </Button>
           <Button
             btnType="transparent"
-            onClick={() => setLanguage(true)}
+            onClick={() => changeLanguage(true)}
             isActive={isPortuguese}
           >
             <span>BR</span>
