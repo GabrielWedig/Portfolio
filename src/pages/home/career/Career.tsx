@@ -9,7 +9,7 @@ export const Career = () => {
   ]
 
   return (
-    <S.Career>
+    <S.Career id='career'>
       <Chip>💼 Carreira</Chip>
       <h2>Trajetória até aqui</h2>
       <S.ExperiencesBox>

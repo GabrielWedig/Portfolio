@@ -19,7 +19,7 @@ export const Video = ({ title, url }: VideoProps) => {
       ></S.VideoFrame>
       <S.Description>
         <h3>{title}</h3>
-        <Button buttonType="transparent">
+        <Button btnType="transparent">
           <PlayArrow />
           <span>Assistir</span>
         </Button>

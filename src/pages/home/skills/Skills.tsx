@@ -22,7 +22,7 @@ import {
 
 export const Skills = () => {
   return (
-    <S.Skills>
+    <S.Skills id='techs'>
       <Chip>🧑‍💻 Skills</Chip>
       <h2>Tecnologias e habilidades</h2>
       <span>Uso no dia a dia</span>

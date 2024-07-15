@@ -9,7 +9,7 @@ export const Videos = () => {
       <h2>Projetos em vídeos</h2>
       <S.ProjectsBox>
         {projects.map((project) => (
-          <Video title={project.title} url={project.video} />
+          <Video key={project.id} title={project.title} url={project.video} />
         ))}
       </S.ProjectsBox>
     </S.Videos>

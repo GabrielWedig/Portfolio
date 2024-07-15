@@ -1,9 +1,8 @@
 import styled from 'styled-components'
-import { colors } from '../../constants'
 
 export const Experience = styled.div`
   border-radius: 20px;
-  border: 1px solid ${colors.purple.main50};
+  border: 1px solid ${(props) => props.theme.main50};
   width: 600px;
   height: max-content;
   padding: 30px;
@@ -13,11 +12,11 @@ export const Experience = styled.div`
 
   h4 {
     font-size: 1.5rem;
-    color: ${colors.white.main};
+    color: ${(props) => props.theme.main};
   }
 
   p {
-    color: ${colors.white.main5};
+    color: ${(props) => props.theme.main5};
   }
 `
 
@@ -26,7 +25,7 @@ export const Period = styled.div`
   justify-content: space-between;
 
   span {
-    color: ${colors.purple.main50};
+    color: ${(props) => props.theme.main50};
     font-weight: 700;
   }
 `

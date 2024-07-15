@@ -8,7 +8,7 @@ export const Projects = () => {
   const [isFront, setIsFront] = useState<boolean>(true)
 
   return (
-    <S.Projects>
+    <S.Projects id='projects'>
       <Chip>🔗 Portfólio</Chip>
       <S.TitleBox>
         <h2>Trabalhos e Projetos</h2>

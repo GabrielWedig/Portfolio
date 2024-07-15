@@ -2,6 +2,7 @@ import { ArrowUpward, ContentCopy, Email, WhatsApp } from '@mui/icons-material'
 import { Button, Chip } from '../../../components'
 import { refs } from '../../../constants'
 import * as S from './style'
+import { scrollToSection } from '../../../utils'
 
 export const Contacts = () => {
   const handleCopyContent = () => {
@@ -10,7 +11,7 @@ export const Contacts = () => {
   }
 
   return (
-    <S.Contacts>
+    <S.Contacts id='contacts'>
       <Chip>📬 Contatos</Chip>
       <h2>Vamos conversar!</h2>
       <S.Buttons>
@@ -26,7 +27,7 @@ export const Contacts = () => {
           <ContentCopy />
         </Button>
       </S.Buttons>
-      <Button buttonType="transparent">
+      <Button btnType="transparent" onClick={() => scrollToSection('top')}>
         <span>Voltar ao topo</span>
         <ArrowUpward />
       </Button>

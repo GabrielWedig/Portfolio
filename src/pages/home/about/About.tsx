@@ -6,7 +6,7 @@ import Curriculum from '../../../public/curriculum.pdf'
 
 export const About = () => {
   return (
-    <S.Presentation>
+    <S.Presentation id='home'>
       {/* <S.Photo src={Photo} alt="Gabriel's photo" /> */}
       <S.Infos>
         <Chip>👋 Saudações!</Chip>

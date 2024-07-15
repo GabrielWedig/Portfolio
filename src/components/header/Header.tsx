@@ -1,40 +1,86 @@
+import { DarkMode, LightMode } from '@mui/icons-material'
 import { Button, Container } from '..'
+import { scrollToSection } from '../../utils'
 import * as S from './style'
+import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
 
-export const Header = () => {
+interface HeaderProps {
+  isDark: boolean
+  setTheme: (isDark: boolean) => void
+}
+
+export const Header = ({ isDark, setTheme }: HeaderProps) => {
+  const [isPortuguese, setIsPortuguese] = useState<boolean>(true)
+  const { t, i18n } = useTranslation()
+
+  const setLanguage = (isPortuguese: boolean) => {
+    i18n.changeLanguage(isPortuguese ? 'pt' : 'en')
+    setIsPortuguese(isPortuguese)
+  }
+
   return (
-    <Container>
+    <Container id="top">
       <S.Header>
-        <img src="" alt="" />
         <S.Navigation>
-          <Button buttonType="transparent" onClick={() => console.log('Home')}>
-            Home
+          <Button btnType="transparent" onClick={() => scrollToSection('home')}>
+            {t('home')}
           </Button>
           <Button
-            buttonType="transparent"
-            onClick={() => console.log('Projetos')}
+            btnType="transparent"
+            onClick={() => scrollToSection('projects')}
           >
-            Projetos
+            {t('projects')}
           </Button>
           <Button
-            buttonType="transparent"
-            onClick={() => console.log('Tecnologias')}
+            btnType="transparent"
+            onClick={() => scrollToSection('techs')}
           >
-            Tecnologias
+            {t('technologies')}
           </Button>
           <Button
-            buttonType="transparent"
-            onClick={() => console.log('Carreira')}
+            btnType="transparent"
+            onClick={() => scrollToSection('career')}
           >
-            Carreira
+            {t('career')}
           </Button>
           <Button
-            buttonType="transparent"
-            onClick={() => console.log('Contato')}
+            btnType="transparent"
+            onClick={() => scrollToSection('contacts')}
           >
-            Contato
+            {t('contact')}
           </Button>
         </S.Navigation>
+        <S.Buttons>
+          <Button
+            btnType="transparent"
+            onClick={() => setTheme(false)}
+            isActive={!isDark}
+          >
+            <LightMode />
+          </Button>
+          <Button
+            btnType="transparent"
+            onClick={() => setTheme(true)}
+            isActive={isDark}
+          >
+            <DarkMode />
+          </Button>
+          <Button
+            btnType="transparent"
+            onClick={() => setLanguage(false)}
+            isActive={!isPortuguese}
+          >
+            <span>EN</span>
+          </Button>
+          <Button
+            btnType="transparent"
+            onClick={() => setLanguage(true)}
+            isActive={isPortuguese}
+          >
+            <span>BR</span>
+          </Button>
+        </S.Buttons>
       </S.Header>
     </Container>
   )

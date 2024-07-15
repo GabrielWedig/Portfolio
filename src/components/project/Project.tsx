@@ -29,8 +29,8 @@ export const Project = ({
       </a>
       <img src={photo} alt="Project Photo" />
       <S.Technologies>
-        {technologies.map((t) => (
-          <Chip>{t}</Chip>
+        {technologies.map((t, index) => (
+          <Chip key={index}>{t}</Chip>
         ))}
       </S.Technologies>
     </S.Project>

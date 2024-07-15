@@ -5,7 +5,8 @@ type ButtonTypes = 'transparent' | 'primary'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode
-  buttonType?: ButtonTypes
+  btnType?: ButtonTypes
+  isActive?: boolean
 }
 
 const buttons = {
@@ -15,9 +16,14 @@ const buttons = {
 
 export const Button = ({
   children,
-  buttonType = 'primary',
+  isActive = false,
+  btnType = 'primary',
   ...rest
 }: ButtonProps) => {
-  const Component = buttons[buttonType]
-  return <Component {...rest}>{children}</Component>
+  const Component = buttons[btnType]
+  return (
+    <Component $isActive={isActive} {...rest}>
+      {children}
+    </Component>
+  )
 }
