@@ -3,7 +3,10 @@
     "id": 0,
     "isFront": true,
     "title": "GitHub API",
-    "description": "Chamada de API para o site GitHub.",
+    "description": {
+      "pt": "Chamada de API para o site GitHub.",
+      "en": "API call to the GitHub website."
+    },
     "repo": "https://github.com/GabrielWedig/GitHubApi",
     "photo": "",
     "video": "https://www.youtube.com/embed/r-L11lwn-AY?si=3Hwrsy6wGwUhDW_Q",
@@ -13,7 +16,10 @@
     "id": 1,
     "isFront": true,
     "title": "Pexels API",
-    "description": "Chamada de API para o site Pexels.",
+    "description": {
+      "pt": "Chamada de API para o site Pexels.",
+      "en": "API call to the Pexels website."
+    },
     "repo": "https://github.com/GabrielWedig/PexelsApi",
     "photo": "",
     "video": "https://www.youtube.com/embed/r-L11lwn-AY?si=3Hwrsy6wGwUhDW_Q",
@@ -23,7 +29,10 @@
     "id": 2,
     "isFront": true,
     "title": "Your Drink",
-    "description": "Site para fazer pedido de bebidas. Participei do projeto como Dev Front-End juntamente com meu amigo Willian Botelho.",
+    "description": {
+      "pt": "Site de pedido de bebidas. Participei do projeto como Dev Front-End juntamente com meu amigo Willian Botelho.",
+      "en": "Drinks ordering website. I participated in the project as Dev Front-End together with my friend Willian Botelho."
+    },
     "repo": "https://github.com/GabrielWedig/YourDrink",
     "photo": "",
     "video": "https://www.youtube.com/embed/r-L11lwn-AY?si=3Hwrsy6wGwUhDW_Q",
@@ -32,8 +41,11 @@
   {
     "id": 3,
     "isFront": false,
-    "title": "BarberTech API",
-    "description": "API completa para uma barbearia fictícia, podendo marcar cortes, adicionar serviços e estabelecimentos. Participei como Dev Full-Stack juntamente com meu amigo Douglas Zucolotto",
+    "title": "BarberTech",
+    "description": {
+      "pt": "API completa para uma barbearia fictícia, podendo marcar cortes, adicionar serviços e estabelecimentos. Participei como Dev Full-Stack juntamente com meu amigo Douglas Zucolotto",
+      "en": "Complete API for a fictitious barbershop, being able to schedule cuts, add services and establishments. I participated as a Full-Stack Dev together with my friend Douglas Zucolotto"
+    },
     "repo": "https://github.com/GabrielWedig/BarberTechApi",
     "photo": "",
     "video": "https://www.youtube.com/embed/r-L11lwn-AY?si=3Hwrsy6wGwUhDW_Q",
@@ -42,8 +54,11 @@
   {
     "id": 4,
     "isFront": true,
-    "title": "BarberTech APP",
-    "description": "Landing Page para uma barbearia fictícia + marcação de cortes e administração. Participei como Dev Full-Stack juntamente com meu amigo Douglas Zucolotto",
+    "title": "BarberTech",
+    "description": {
+      "pt": "Landing Page para uma barbearia fictícia + marcação de cortes e administração. Participei como Dev Full-Stack juntamente com meu amigo Douglas Zucolotto",
+      "en": "Landing page for a fictitious barbershop + scheduling cuts and administration. I participated as a Full-Stack Dev together with my friend Douglas Zucolotto"
+    },
     "repo": "https://github.com/GabrielWedig/BarberTechApp",
     "photo": "",
     "video": "https://www.youtube.com/embed/r-L11lwn-AY?si=3Hwrsy6wGwUhDW_Q",

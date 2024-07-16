@@ -1,4 +1,4 @@
-import { About, Career, Projects, Skills, Videos, Contacts } from '.'
+import { About, Career, Projects, Skills, Contacts } from '.'
 import { Footer, Header } from '../../components'
 
 export const Home = () => {
@@ -7,7 +7,6 @@ export const Home = () => {
       <Header />
       <About />
       <Projects />
-      <Videos />
       <Skills />
       <Career />
       <Contacts />

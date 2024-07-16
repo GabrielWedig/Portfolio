@@ -2,33 +2,66 @@
   {
     "id": 0,
     "isAcademic": false,
-    "title": "Estágio / Desenvolvedor Full-Stck na CWI Software",
-    "description": "Sistema interno da empresa Sencinet para contratação de provedores de internet. Projeto com back-end em .NET e front-end em React. Responsável por desenvolver novas features, corrigir bugs, fazer deploys e contribuir com o time na tomada de decisões.",
-    "period_time": "1 ano e 7 mêses",
-    "period": "Junho 2022 até Janeiro 2024"
+    "title": {
+      "pt": "Estágio / Desenvolvedor Full-Stck na CWI Software",
+      "en": "Internship / Full-Stck Developer at CWI Software"
+    },
+    "description": {
+      "pt": "Sistema interno da empresa Sencinet para contratação de provedores de internet. Projeto com back-end em .NET e front-end em React. Responsável por desenvolver novas features, corrigir bugs, fazer deploys e contribuir com o time na tomada de decisões.",
+      "en": "Sencinet's internal system for hiring internet providers. Project with back-end in .NET and front-end in React. Responsible for developing new features, fixing bugs, deploying and contributing to the team in decision making."
+    },
+    "period_time": { "pt": "1 ano e 7 meses", "en": "1 year and 7 months" },
+    "period": {
+      "pt": "Junho 2022 até Janeiro 2024",
+      "en": "June 2022 to January 2024"
+    }
   },
   {
     "id": 1,
     "isAcademic": true,
-    "title": "Ensino Médio no Colégio Adventista de Gravataí",
-    "description": "Ensino Médio no Colégio Adventista de Gravataí",
-    "period_time": "3 anos",
-    "period": "Janeiro 2014 até Dezembro 2016"
+    "title": {
+      "pt": "Ensino Médio no Colégio Adventista de Gravataí",
+      "en": "High School at Colégio Adventista de Gravataí"
+    },
+    "description": {
+      "pt": "Ensino Médio no Colégio Adventista de Gravataí",
+      "en": "High School at Colégio Adventista de Gravataí"
+    },
+    "period_time": { "pt": "3 anos", "en": "3 years" },
+    "period": {
+      "pt": "Janeiro 2014 até Dezembro 2016",
+      "en": "January 2014 to December 2016"
+    }
   },
   {
     "id": 2,
     "isAcademic": true,
-    "title": "Técnico em Eletrônica no SENAI",
-    "description": "Técnico em Eletrônica",
-    "period_time": "2 anos",
-    "period": "Janeiro 2017 até Dezembro 2018"
+    "title": {
+      "pt": "Técnico em Eletrônica no SENAI",
+      "en": "Electronics Technician at SENAI"
+    },
+    "description": {
+      "pt": "Técnico em Eletrônica no SENAI",
+      "en": "Electronics Technician at SENAI"
+    },
+    "period_time": { "pt": "2 anos", "en": "2 years" },
+    "period": {
+      "pt": "Janeiro 2017 até Dezembro 2018",
+      "en": "January 2017 to December 2018"
+    }
   },
   {
     "id": 3,
     "isAcademic": true,
-    "title": "Análise e Desenvolvimento de Sistemas na Unisinos",
-    "description": "Análise e Desenvolvimento de Sistemas na Unisinos",
-    "period_time": "2 anos",
-    "period": "Janeiro 2022 até agora"
+    "title": {
+      "pt": "Análise e Desenvolvimento de Sistemas na Unisinos",
+      "en": "Systems Analysis and Development at Unisinos"
+    },
+    "description": {
+      "pt": "Análise e Desenvolvimento de Sistemas na Unisinos",
+      "en": "Systems Analysis and Development at Unisinos"
+    },
+    "period_time": { "pt": "2 anos", "en": "2 years" },
+    "period": { "pt": "Janeiro 2022 até agora", "en": "January 2022 so far" }
   }
 ]

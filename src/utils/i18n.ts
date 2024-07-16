@@ -5,6 +5,8 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 import translationEn from '../public/locales/en/translation.json'
 import translationPt from '../public/locales/pt/translation.json'
 
+export type LanguageTypes = 'pt' | 'en'
+
 const resources = {
   en: {
     translation: translationEn

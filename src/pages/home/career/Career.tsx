@@ -1,6 +1,8 @@
 import { Chip, Experience } from '../../../components'
 import * as S from './style'
 import experiences from '../../../public/experiences.json'
+import { LanguageTypes } from '../../../utils/i18n'
+import { useTranslation } from 'react-i18next'
 
 export const Career = () => {
   const columns = [
@@ -8,8 +10,11 @@ export const Career = () => {
     { id: 1, isAcademic: true, title: 'Acadêmica' }
   ]
 
+  const { t, i18n } = useTranslation()
+  const languageCode = i18n.language as LanguageTypes
+
   return (
-    <S.Career id='career'>
+    <S.Career id="career">
       <Chip>💼 Carreira</Chip>
       <h2>Trajetória até aqui</h2>
       <S.ExperiencesBox>
@@ -21,10 +26,10 @@ export const Career = () => {
               .map((e) => (
                 <Experience
                   key={e.id}
-                  title={e.title}
-                  description={e.description}
-                  period={e.period}
-                  periodTime={e.period_time}
+                  title={e.title[languageCode]}
+                  description={e.description[languageCode]}
+                  period={e.period[languageCode]}
+                  periodTime={e.period_time[languageCode]}
                 />
               ))}
           </S.Column>

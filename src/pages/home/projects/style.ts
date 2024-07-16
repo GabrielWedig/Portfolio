@@ -25,5 +25,5 @@ export const ProjectsBox = styled.div`
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 `
