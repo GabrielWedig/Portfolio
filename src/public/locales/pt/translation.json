@@ -1,7 +1,12 @@
 {
-  "home": "Home",
-  "projects": "Projetos",
-  "technologies": "Tecnologias",
   "career": "Carreira",
-  "contact": "Contato"
+  "contact": "Contato",
+  "description": "Tenho trabalhado como desenvolvedor desde 2022, inicialmente fazendo projetos pessoais e posteriormente como  Desenvolvedor Full-Stack, onde pude contribuir para o desenvolvimento de um projeto por completo. Minhas especialidades incluem: React, TypeScript, JavaScript, .NET, C# e PostgreSQL.",
+  "downloadCV": "Baixar CV",
+  "greetings": "Saudações!",
+  "home": "Home",
+  "letsTalk": "Vamos conversar!",
+  "occupation": "Desenvolvedor Full-Stack",
+  "projects": "Projetos",
+  "technologies": "Tecnologias"
 }

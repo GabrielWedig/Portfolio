@@ -21,6 +21,7 @@ export const Buttons = styled.div`
 
   span {
     font-weight: 800;
+    font-size: 1.1rem;
   }
 `
 

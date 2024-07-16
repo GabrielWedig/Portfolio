@@ -1,10 +1,13 @@
 import styled from 'styled-components'
 
 export const Chip = styled.div`
-  background-color: ${(props) => props.theme.main5};
-  padding: 5px 10px;
+  background-color: ${({ theme }) => theme.secondary};
+  padding: 5px 8px;
   border-radius: 10px;
   width: max-content;
-  color: ${(props) => props.theme.main};
+  color: ${({ theme }) => theme.primary};
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 `

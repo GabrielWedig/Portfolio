@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { colors } from '../../../constants'
 import { Container } from '../../../components'
 
 export const Presentation = styled(Container)`
@@ -16,12 +15,12 @@ export const Infos = styled.article`
   gap: 20px;
 
   p {
-    color: ${colors.white.main5};
+    color: ${({ theme }) => theme.text};
   }
 
   h1 {
     font-size: 3rem;
-    color: ${colors.white.main};
+    color: ${({ theme }) => theme.text};
   }
 `
 
@@ -32,7 +31,7 @@ export const Occupation = styled.div`
 
   span,
   svg {
-    color: ${colors.white.main5};
+    color: ${({ theme }) => theme.text};
   }
 `
 

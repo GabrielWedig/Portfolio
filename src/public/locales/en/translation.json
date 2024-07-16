@@ -1,7 +1,12 @@
 {
-  "home": "Home",
-  "projects": "Projects",
-  "technologies": "Technologies",
   "career": "Career",
-  "contact": "Contact"
+  "contact": "Contact",
+  "description": "I have been working as a developer since 2022, initially doing personal projects and later as Full-Stack Developer, where I was able to contribute to the development of a complete project. My specialties include: React, TypeScript, JavaScript, .NET, C# and PostgreSQL.",
+  "downloadCV": "Download CV",
+  "greetings": "Greetings!",
+  "home": "Home",
+  "letsTalk": "Let's talk!",
+  "occupation": "Full-Stack Developer",
+  "projects": "Projects",
+  "technologies": "Technologies"
 }

@@ -3,16 +3,19 @@ import * as S from './style'
 import { refs } from '../../../constants'
 import { WhatsApp, GitHub, LinkedIn, Download } from '@mui/icons-material'
 import Curriculum from '../../../public/curriculum.pdf'
+import { useTranslation } from 'react-i18next'
 
 export const About = () => {
+  const { t } = useTranslation()
+
   return (
-    <S.Presentation id='home'>
+    <S.Presentation id="home">
       {/* <S.Photo src={Photo} alt="Gabriel's photo" /> */}
       <S.Infos>
-        <Chip>👋 Saudações!</Chip>
+        <Chip>👋 {t('greetings')}</Chip>
         <h1>Gabriel Garcia Wedig</h1>
         <S.Occupation>
-          <span>Desenvolvedor Full-Stack</span>
+          <span>{t('occupation')}</span>
           <a href={refs.github} target="_blank">
             <GitHub />
           </a>
@@ -20,24 +23,18 @@ export const About = () => {
             <LinkedIn />
           </a>
         </S.Occupation>
-        <p>
-          Tenho trabalhado como desenvolvedor <strong>desde 2022</strong>,
-          inicialmente fazendo projetos pessoais e posteriormente como
-          Desenvolvedor Full-Stack, onde pude contribuir para o desenvolvimento
-          de um projeto por completo. Minhas especialidades incluem:
-          <strong>React, TypeScript, JavaScript, .NET, C# e PostgreSQL.</strong>
-        </p>
+        <p>{t('description')}</p>
         <S.CV>
           <a href={refs.whatsApp} target="_blank">
             <Button>
               <WhatsApp />
-              <span>Vamos conversar!</span>
+              <span>{t('letsTalk')}</span>
             </Button>
           </a>
           <a href={Curriculum} download="Currículo - Gabriel Wedig">
             <Button>
               <Download />
-              <span>Baixar CV</span>
+              <span>{t('downloadCV')}</span>
             </Button>
           </a>
         </S.CV>

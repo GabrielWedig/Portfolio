@@ -22,7 +22,7 @@ export const TransparentBtn = styled.button<ButtonProps>`
 
 export const PrimaryBtn = styled.button<ButtonProps>`
   background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.secondary};
+  border: 1px solid ${({ theme }) => theme.primary};
   border-radius: 12px;
   width: max-content;
   padding: 10px 20px;
@@ -30,12 +30,12 @@ export const PrimaryBtn = styled.button<ButtonProps>`
   align-items: center;
   gap: 10px;
   transition: all 0.3s ease;
-  color: ${({ theme }) => theme.secondary};
+  color: ${({ theme }) => theme.primary};
   font-size: 0.95rem;
   font-weight: 600;
 
   svg {
-    color: ${({ theme }) => theme.secondary};
+    color: ${({ theme }) => theme.primary};
     font-size: 1.2rem;
   }
 
