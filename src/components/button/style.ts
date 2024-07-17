@@ -14,6 +14,7 @@ export const TransparentBtn = styled.button<ButtonProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 
   &:hover {
     color: ${({ theme }) => theme.primary};
@@ -22,7 +23,9 @@ export const TransparentBtn = styled.button<ButtonProps>`
 
 export const PrimaryBtn = styled.button<ButtonProps>`
   background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.primary};
+  border: 1px solid
+    ${({ theme, $isActive }) => ($isActive ? theme.primary : 'transparent')};
+  color: ${({ theme }) => theme.primary};
   border-radius: 12px;
   width: max-content;
   padding: 10px 20px;
@@ -30,7 +33,6 @@ export const PrimaryBtn = styled.button<ButtonProps>`
   align-items: center;
   gap: 10px;
   transition: all 0.3s ease;
-  color: ${({ theme }) => theme.primary};
   font-size: 0.95rem;
   font-weight: 600;
 

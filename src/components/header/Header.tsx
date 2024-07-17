@@ -21,29 +21,37 @@ export const Header = () => {
     <Container id="top">
       <S.Header>
         <S.Navigation>
-          <Button btnType="transparent" onClick={() => scrollToSection('home')}>
+          <Button
+            btnType="transparent"
+            isActive={false}
+            onClick={() => scrollToSection('home')}
+          >
             {t('home')}
           </Button>
           <Button
             btnType="transparent"
+            isActive={false}
             onClick={() => scrollToSection('projects')}
           >
             {t('projects')}
           </Button>
           <Button
             btnType="transparent"
+            isActive={false}
             onClick={() => scrollToSection('techs')}
           >
             {t('technologies')}
           </Button>
           <Button
             btnType="transparent"
+            isActive={false}
             onClick={() => scrollToSection('career')}
           >
             {t('career')}
           </Button>
           <Button
             btnType="transparent"
+            isActive={false}
             onClick={() => scrollToSection('contacts')}
           >
             {t('contact')}

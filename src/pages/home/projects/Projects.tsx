@@ -17,11 +17,11 @@ export const Projects = () => {
       <Chip>🔗 {t('portfolio')}</Chip>
       <S.TitleBox>
         <h2>{t('worksAndProjects')}</h2>
-        <Button onClick={() => setIsFront(true)}>
+        <Button onClick={() => setIsFront(true)} isActive={isFront}>
           <Web />
           <span>Front-End</span>
         </Button>
-        <Button onClick={() => setIsFront(false)}>
+        <Button onClick={() => setIsFront(false)} isActive={!isFront}>
           <Storage />
           <span>Back-End</span>
         </Button>
@@ -35,7 +35,7 @@ export const Projects = () => {
               title={p.title}
               description={p.description[languageCode]}
               repo={p.repo}
-              photo={p.photo}
+              gif={p.gif}
               technologies={p.technologies}
             />
           ))}

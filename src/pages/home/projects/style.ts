@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { colors } from '../../../constants'
 import { Container } from '../../../components'
 
 export const Projects = styled(Container)`
@@ -16,14 +15,14 @@ export const TitleBox = styled.div`
 
   h2 {
     font-size: 3rem;
-    color: ${colors.white.main};
+    color: ${({ theme }) => theme.text};
     margin-right: auto;
   }
 `
 
 export const ProjectsBox = styled.div`
   display: flex;
-  gap: 30px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: flex-start;
 `

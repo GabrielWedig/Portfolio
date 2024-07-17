@@ -2,6 +2,7 @@
   "career": "Career",
   "contact": "Contact",
   "description": "I have been working as a developer since 2022, initially doing personal projects and later as Full-Stack Developer, where I was able to contribute to the development of a complete project. My specialties include: React, TypeScript, JavaScript, .NET, C# and PostgreSQL.",
+  "details": "Details",
   "downloadCV": "Download CV",
   "greetings": "Greetings!",
   "home": "Home",
@@ -9,6 +10,7 @@
   "occupation": "Full-Stack Developer",
   "portfolio": "Portfolio",
   "projects": "Projects",
+  "repository": "Repository",
   "technologies": "Technologies",
   "worksAndProjects": "Works and Projects"
 }

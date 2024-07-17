@@ -8,9 +8,8 @@
       "en": "API call to the GitHub website."
     },
     "repo": "https://github.com/GabrielWedig/GitHubApi",
-    "photo": "",
-    "video": "https://www.youtube.com/embed/r-L11lwn-AY?si=3Hwrsy6wGwUhDW_Q",
-    "technologies": ["Javascript", "CSS", "HTML"]
+    "gif": "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2gwem8yMmNubzk3dDVxamM0dXVjZ2RpOXk2bHVkbHUyNHliajd2eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/K4Umw1A8fA7kUgAGGs/giphy.gif",
+    "technologies": ["React - Javascript", "CSS"]
   },
   {
     "id": 1,
@@ -21,47 +20,55 @@
       "en": "API call to the Pexels website."
     },
     "repo": "https://github.com/GabrielWedig/PexelsApi",
-    "photo": "",
-    "video": "https://www.youtube.com/embed/r-L11lwn-AY?si=3Hwrsy6wGwUhDW_Q",
-    "technologies": ["Javascript", "SCSS", "HTML"]
+    "gif": "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmprZXczYW5pbmQ4N3VkYW1rbHRhcDM2bDZjYWw0OXF0dHIwdDhjNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dk7wDYzne5FbWmn17N/giphy.gif",
+    "technologies": ["React - Javascript", "SASS"]
   },
   {
     "id": 2,
-    "isFront": true,
-    "title": "Your Drink",
-    "description": {
-      "pt": "Site de pedido de bebidas. Participei do projeto como Dev Front-End juntamente com meu amigo Willian Botelho.",
-      "en": "Drinks ordering website. I participated in the project as Dev Front-End together with my friend Willian Botelho."
-    },
-    "repo": "https://github.com/GabrielWedig/YourDrink",
-    "photo": "",
-    "video": "https://www.youtube.com/embed/r-L11lwn-AY?si=3Hwrsy6wGwUhDW_Q",
-    "technologies": ["Typescript", "CSS", "HTML"]
-  },
-  {
-    "id": 3,
     "isFront": false,
     "title": "BarberTech",
     "description": {
-      "pt": "API completa para uma barbearia fictícia, podendo marcar cortes, adicionar serviços e estabelecimentos. Participei como Dev Full-Stack juntamente com meu amigo Douglas Zucolotto",
-      "en": "Complete API for a fictitious barbershop, being able to schedule cuts, add services and establishments. I participated as a Full-Stack Dev together with my friend Douglas Zucolotto"
+      "pt": "API para uma barbearia fictícia. É possível marcar horários, criar cortes, adicionar funcionários e estabelecimentos.",
+      "en": "API for a fictional barbershop. You can schedule appointments, create cuts, add employees and establishments."
     },
     "repo": "https://github.com/GabrielWedig/BarberTechApi",
-    "photo": "",
-    "video": "https://www.youtube.com/embed/r-L11lwn-AY?si=3Hwrsy6wGwUhDW_Q",
+    "gif": "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3FkbzFrYXQzZ3dkbmc5OHZ1aHRwMTlud215OXR0MGx3cDFyZXAyaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UZKL2IM8fdquTOK6KF/giphy.gif",
     "technologies": ["C#", "Entity Framework", ".NET", "PostgreSQL"]
+  },
+  {
+    "id": 3,
+    "isFront": true,
+    "title": "BarberTech",
+    "description": {
+      "pt": "Landing Page para uma barbearia fictícia com chamadas para o back-end. Conta com features como: Marcar horários, editar perfil, login e etc.",
+      "en": "Landing Page for a fictional barbershop with calls to the backend. It has features such as: Book appointments, edit profile, login, etc."
+    },
+    "repo": "https://github.com/GabrielWedig/BarberTechApp",
+    "gif": "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGswdGc4M2EyMjNsNmoyNzh1b2hwdHhzaWNyem9oa2VycTRtN2dkZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H9HZiQ0uvsBpL7SzDj/giphy.gif",
+    "technologies": ["React - Typescript", "Styled Components", "Axios"]
   },
   {
     "id": 4,
     "isFront": true,
-    "title": "BarberTech",
+    "title": "AppointTrack",
     "description": {
-      "pt": "Landing Page para uma barbearia fictícia + marcação de cortes e administração. Participei como Dev Full-Stack juntamente com meu amigo Douglas Zucolotto",
-      "en": "Landing page for a fictitious barbershop + scheduling cuts and administration. I participated as a Full-Stack Dev together with my friend Douglas Zucolotto"
+      "pt": "Cópia do Google Agenda sendo a principal funcionalidade um cliente marcando horário na agenda do proprietário",
+      "en": "Copy of Google Calendar with the main functionality being a customer scheduling time in the owner's calendar"
     },
     "repo": "https://github.com/GabrielWedig/BarberTechApp",
-    "photo": "",
-    "video": "https://www.youtube.com/embed/r-L11lwn-AY?si=3Hwrsy6wGwUhDW_Q",
-    "technologies": ["Typescript", "StyledComponents", "Axios"]
+    "gif": "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGs2aWh1ZHFlb3IyYnI2ZTN6eHdubXRicWtyemY4bWZpcGdybXJ0dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cV7Phk1ddRvFr09hWZ/giphy.gif",
+    "technologies": ["React - Typescript", "Styled Components", "Axios"]
+  },
+  {
+    "id": 5,
+    "isFront": false,
+    "title": "AppointTrack",
+    "description": {
+      "pt": "Api para marcar horários, verificar se tem agenda disponível e etc.",
+      "en": "API to schedule appointments, check if there is an available schedule, etc"
+    },
+    "repo": "https://github.com/GabrielWedig/BarberTechApp",
+    "gif": "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzk1emR6MmgycjVlZXEzd3ljNWR2NHRhY2x0M3Q1bndvamE3d2p5eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FEFQmJESVyKwopvVoR/giphy.gif",
+    "technologies": ["C#", "Entity Framework", ".NET", "PostgreSQL"]
   }
 ]

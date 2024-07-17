@@ -16,7 +16,7 @@ const buttons = {
 
 export const Button = ({
   children,
-  isActive = false,
+  isActive = true,
   btnType = 'primary',
   ...rest
 }: ButtonProps) => {
