@@ -1,6 +1,8 @@
 {
+  "alreadyProjects": "I have already carried out projects",
   "career": "Career",
   "contact": "Contact",
+  "dailyBasis": "Use on a daily basis",
   "description": "I have been working as a developer since 2022, initially doing personal projects and later as Full-Stack Developer, where I was able to contribute to the development of a complete project. My specialties include: React, TypeScript, JavaScript, .NET, C# and PostgreSQL.",
   "details": "Details",
   "downloadCV": "Download CV",
@@ -11,6 +13,8 @@
   "portfolio": "Portfolio",
   "projects": "Projects",
   "repository": "Repository",
+  "skills": "Skills",
   "technologies": "Technologies",
+  "techsAndSkills": "Technologies and Skills",
   "worksAndProjects": "Works and Projects"
 }

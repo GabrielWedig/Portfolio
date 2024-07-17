@@ -1,6 +1,8 @@
 {
+  "alreadyProjects": "Já realizei projetos",
   "career": "Carreira",
   "contact": "Contato",
+  "dailyBasis": "Uso no dia a dia",
   "description": "Tenho trabalhado como desenvolvedor desde 2022, inicialmente fazendo projetos pessoais e posteriormente como  Desenvolvedor Full-Stack, onde pude contribuir para o desenvolvimento de um projeto por completo. Minhas especialidades incluem: React, TypeScript, JavaScript, .NET, C# e PostgreSQL.",
   "details": "Detalhes",
   "downloadCV": "Baixar CV",
@@ -11,6 +13,8 @@
   "portfolio": "Portfólio",
   "projects": "Projetos",
   "repository": "Repositório",
+  "skills": "Habilidades",
   "technologies": "Tecnologias",
+  "techsAndSkills": "Tecnologias e Habilidades",
   "worksAndProjects": "Trabalhos e Projetos"
 }

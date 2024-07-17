@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { colors } from '../../../constants'
 
 export const Skills = styled.section`
   display: flex;
@@ -10,11 +9,11 @@ export const Skills = styled.section`
 
   h2 {
     font-size: 3rem;
-    color: ${colors.white.main};
+    color: ${({ theme }) => theme.text};
   }
 
   span {
-    color: ${colors.white.main5};
+    color: ${({ theme }) => theme.text};
   }
 `
 
