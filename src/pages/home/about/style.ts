@@ -20,7 +20,7 @@ export const Infos = styled.article`
 
   h1 {
     font-size: 3rem;
-    color: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.title};
   }
 `
 
@@ -32,6 +32,11 @@ export const Occupation = styled.div`
   span,
   svg {
     color: ${({ theme }) => theme.text};
+  }
+
+  a:hover > svg {
+    transition: all 0.3s ease;
+    color: ${({ theme }) => theme.primary};
   }
 `
 

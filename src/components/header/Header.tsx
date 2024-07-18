@@ -18,9 +18,9 @@ export const Header = () => {
   }
 
   return (
-    <Container id="top">
-      <S.Header>
-        <S.Navigation>
+    <S.Header>
+      <S.Navigation>
+        <S.LeftBtns>
           <Button
             btnType="transparent"
             isActive={false}
@@ -56,8 +56,9 @@ export const Header = () => {
           >
             {t('contact')}
           </Button>
-        </S.Navigation>
-        <S.Buttons>
+        </S.LeftBtns>
+
+        <S.RightBtns>
           <Button
             btnType="transparent"
             onClick={() => changeTheme(false)}
@@ -86,8 +87,8 @@ export const Header = () => {
           >
             <span>BR</span>
           </Button>
-        </S.Buttons>
-      </S.Header>
-    </Container>
+        </S.RightBtns>
+      </S.Navigation>
+    </S.Header>
   )
 }

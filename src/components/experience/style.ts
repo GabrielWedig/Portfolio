@@ -9,10 +9,11 @@ export const Experience = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
+  transition: all 0.3s ease;
 
   h4 {
     font-size: 1.5rem;
-    color: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.title};
   }
 
   p {

@@ -1,26 +1,27 @@
 import styled from 'styled-components'
 
 export const Header = styled.header`
-  background-color: ${({ theme }) => theme.secondary};
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-size: 18px;
-  margin: 20px 0;
+  padding: 0 200px;
+  padding-top: 25px;
 `
 
 export const Navigation = styled.header`
+  background-color: ${({ theme }) => theme.secondary};
   display: flex;
-  gap: 10px;
-  padding: 5px;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-radius: 10px;
 `
 
-export const Buttons = styled.div`
+export const RightBtns = styled.div`
   display: flex;
 
   span {
     font-weight: 800;
     font-size: 1.1rem;
   }
+`
+
+export const LeftBtns = styled.div`
+  display: flex;
 `

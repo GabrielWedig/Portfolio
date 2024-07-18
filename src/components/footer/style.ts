@@ -11,6 +11,11 @@ export const Footer = styled.footer`
   svg {
     color: ${({ theme }) => theme.text};
   }
+
+  a:hover > svg {
+    transition: all 0.3s ease;
+    color: ${({ theme }) => theme.primary};
+  }
 `
 
 export const Social = styled.div`

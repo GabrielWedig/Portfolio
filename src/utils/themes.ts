@@ -1,15 +1,15 @@
 export const darkTheme = {
-  background: '#090E16',
+  background: '#100623',
   primary: '#7B4AE2',
-  secondary: '#7B4AE20D',
+  secondary: '#180934',
   text: '#CCCCCC',
   title: '#FFFFFF'
 }
 
 export const lightTheme = {
-  background: '#E6DEFF',
+  background: '#F3EEFC',
   primary: '#7B4AE2',
-  secondary: '#7a4ae284',
-  text: '#090E16',
-  title: '#000000'
+  secondary: '#E6DCF9',
+  text: '#3D3D3D',
+  title: '#0A0A0A'
 }

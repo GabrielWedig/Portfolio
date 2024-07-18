@@ -9,10 +9,11 @@ export const Project = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  transition: all 0.3s ease;
 
   h3 {
     font-size: 1.5rem;
-    color: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.title};
   }
 
   p {
@@ -21,6 +22,10 @@ export const Project = styled.div`
 
   img {
     border-radius: 10px;
+  }
+
+  &:hover {
+    background-color: ${({ theme }) => theme.secondary};;
   }
 `
 

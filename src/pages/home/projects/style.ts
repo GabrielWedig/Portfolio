@@ -15,7 +15,7 @@ export const TitleBox = styled.div`
 
   h2 {
     font-size: 3rem;
-    color: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.title};
     margin-right: auto;
   }
 `

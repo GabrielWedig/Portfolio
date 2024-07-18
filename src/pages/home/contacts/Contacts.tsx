@@ -33,7 +33,11 @@ export const Contacts = () => {
           <span>{references.email}</span>
         </Button>
       </S.Buttons>
-      <Button btnType="transparent" onClick={() => scrollToSection('top')}>
+      <Button
+        btnType="transparent"
+        onClick={() => scrollToSection('root')}
+        isActive={false}
+      >
         <span>{t('backTop')}</span>
         <ArrowUpward />
       </Button>

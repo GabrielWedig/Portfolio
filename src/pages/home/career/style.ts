@@ -10,7 +10,7 @@ export const Career = styled(Container)`
 
   h2 {
     font-size: 3rem;
-    color: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.title};
     margin-bottom: 50px;
   }
 `
@@ -29,6 +29,6 @@ export const Column = styled.div`
 
   h3 {
     font-size: 2rem;
-    color: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.title};
   }
 `

@@ -10,7 +10,7 @@ export const TransparentBtn = styled.button<ButtonProps>`
   color: ${({ theme, $isActive }) => ($isActive ? theme.primary : theme.text)};
   font-size: 1rem;
   font-weight: 500;
-  transition: color 0.5s ease;
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: space-between;
