@@ -2,9 +2,9 @@ import { DarkMode, LightMode } from '@mui/icons-material'
 import { useTranslation } from 'react-i18next'
 import { scrollToSection } from '../../utils'
 import { useTheme } from '../../hooks'
-import { Button, Container } from '..'
 import { useState } from 'react'
 import * as S from './style'
+import { Button } from '..'
 
 export const Header = () => {
   const [isPortuguese, setIsPortuguese] = useState<boolean>(true)
