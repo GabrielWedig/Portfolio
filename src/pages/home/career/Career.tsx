@@ -1,35 +1,38 @@
 import { Chip, Experience } from '../../../components'
-import * as S from './style'
-import experiences from '../../../public/experiences.json'
-import { LanguageTypes } from '../../../utils/i18n'
+import { getLanguageCode } from '../../../utils'
 import { useTranslation } from 'react-i18next'
+import { experiences } from '../../../public'
+import * as S from './style'
 
 export const Career = () => {
+  const { t } = useTranslation()
+
   const columns = [
-    { id: 0, isAcademic: false, title: 'Profissional' },
-    { id: 1, isAcademic: true, title: 'Acadêmica' }
+    { id: 0, isAcademic: false, title: t('professional') },
+    { id: 1, isAcademic: true, title: t('academic') }
   ]
 
-  const { t, i18n } = useTranslation()
-  const languageCode = i18n.language as LanguageTypes
+  const languageCode = getLanguageCode()
 
   return (
     <S.Career id="career">
-      <Chip>💼 Carreira</Chip>
-      <h2>Trajetória até aqui</h2>
+      <Chip>💼 {t('career')}</Chip>
+      <h2>{t('journey')}</h2>
       <S.ExperiencesBox>
         {columns.map((column) => (
           <S.Column key={column.id}>
             <h3>{column.title}</h3>
             {experiences
-              .filter((e) => e.isAcademic === column.isAcademic)
-              .map((e) => (
+              .filter(
+                (experience) => experience.isAcademic === column.isAcademic
+              )
+              .map((experience) => (
                 <Experience
-                  key={e.id}
-                  title={e.title[languageCode]}
-                  description={e.description[languageCode]}
-                  period={e.period[languageCode]}
-                  periodTime={e.period_time[languageCode]}
+                  key={experience.id}
+                  title={experience.title[languageCode]}
+                  description={experience.description[languageCode]}
+                  period={experience.period[languageCode]}
+                  periodTime={experience.period_time[languageCode]}
                 />
               ))}
           </S.Column>

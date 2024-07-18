@@ -1,9 +1,8 @@
 import styled from 'styled-components'
-import { colors } from '../../constants'
 
 export const Project = styled.div`
   border-radius: 20px;
-  border: 1px solid ${colors.purple.main50};
+  border: 1px solid ${({ theme }) => theme.primary};
   width: 360px;
   height: max-content;
   padding: 30px;

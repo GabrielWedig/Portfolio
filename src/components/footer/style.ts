@@ -1,16 +1,15 @@
 import styled from 'styled-components'
-import { colors } from '../../constants'
 
 export const Footer = styled.footer`
   padding: 30px 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: ${colors.purple.main5};
+  background-color: ${({ theme }) => theme.secondary};
 
   span,
   svg {
-    color: ${colors.white.main5};
+    color: ${({ theme }) => theme.text};
   }
 `
 

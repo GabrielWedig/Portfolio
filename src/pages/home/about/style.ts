@@ -1,5 +1,5 @@
-import styled from 'styled-components'
 import { Container } from '../../../components'
+import styled from 'styled-components'
 
 export const Presentation = styled(Container)`
   display: flex;
@@ -37,8 +37,8 @@ export const Occupation = styled.div`
 
 export const Photo = styled.img`
   border-radius: 100%;
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
 `
 
 export const CV = styled.div`

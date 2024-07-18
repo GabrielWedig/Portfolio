@@ -1,6 +1,5 @@
-import styled from 'styled-components'
-import { colors } from '../../../constants'
 import { Container } from '../../../components'
+import styled from 'styled-components'
 
 export const Career = styled(Container)`
   display: flex;
@@ -11,7 +10,7 @@ export const Career = styled(Container)`
 
   h2 {
     font-size: 3rem;
-    color: ${colors.white.main};
+    color: ${({ theme }) => theme.text};
     margin-bottom: 50px;
   }
 `
@@ -30,6 +29,6 @@ export const Column = styled.div`
 
   h3 {
     font-size: 2rem;
-    color: ${colors.white.main};
+    color: ${({ theme }) => theme.text};
   }
 `

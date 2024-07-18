@@ -24,8 +24,3 @@ export const Buttons = styled.div`
     font-size: 1.1rem;
   }
 `
-
-export const Divide = styled.div`
-  width: 1px;
-  background-color: ${({ theme }) => theme.text};
-`

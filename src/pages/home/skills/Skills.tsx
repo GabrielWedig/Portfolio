@@ -1,4 +1,6 @@
 import { Chip } from '../../../components'
+import { useTranslation } from 'react-i18next'
+import { Tooltip } from '@mui/material'
 import * as S from './style'
 import {
   Arduino,
@@ -18,12 +20,30 @@ import {
   ReactIcon,
   Sass,
   TypeScript
-} from '../../../img/icons'
-import { useTranslation } from 'react-i18next'
-import { Tooltip } from '@mui/material'
+} from '../../../img'
 
 export const Skills = () => {
   const { t } = useTranslation()
+
+  const techs = [
+    { id: 0, src: ReactIcon, title: 'React', isDaily: true },
+    { id: 1, src: TypeScript, title: 'TypeScript', isDaily: true },
+    { id: 2, src: AzureDevops, title: 'AzureDevops', isDaily: true },
+    { id: 3, src: CSharp, title: 'C#', isDaily: true },
+    { id: 4, src: CSS, title: 'CSS', isDaily: true },
+    { id: 5, src: Git, title: 'Git', isDaily: true },
+    { id: 6, src: GitHub, title: 'GitHub', isDaily: true },
+    { id: 7, src: HTML, title: 'HTML', isDaily: true },
+    { id: 8, src: JavaScript, title: 'JavaScript', isDaily: true },
+    { id: 9, src: PostgresSQL, title: 'PostgresSQL', isDaily: true },
+    { id: 10, src: Arduino, title: 'Arduino', isDaily: false },
+    { id: 11, src: Docker, title: 'Docker', isDaily: false },
+    { id: 12, src: Java, title: 'Java', isDaily: false },
+    { id: 13, src: MongoDB, title: 'MongoDB', isDaily: false },
+    { id: 14, src: PHP, title: 'PHP', isDaily: false },
+    { id: 15, src: Python, title: 'Python', isDaily: false },
+    { id: 16, src: Sass, title: 'Sass', isDaily: false }
+  ]
 
   return (
     <S.Skills id="techs">
@@ -31,60 +51,23 @@ export const Skills = () => {
       <h2>{t('techsAndSkills')}</h2>
       <span>{t('dailyBasis')}</span>
       <S.Techs>
-        <Tooltip title="React">
-          <img src={ReactIcon} />
-        </Tooltip>
-        <Tooltip title="TypeScript">
-          <img src={TypeScript} />
-        </Tooltip>
-        <Tooltip title="AzureDevops">
-          <img src={AzureDevops} />
-        </Tooltip>
-        <Tooltip title="CSharp">
-          <img src={CSharp} />
-        </Tooltip>
-        <Tooltip title="CSS">
-          <img src={CSS} />
-        </Tooltip>
-        <Tooltip title="Git">
-          <img src={Git} />
-        </Tooltip>
-        <Tooltip title="GitHub">
-          <img src={GitHub} />
-        </Tooltip>
-        <Tooltip title="HTML">
-          <img src={HTML} />
-        </Tooltip>
-        <Tooltip title="JavaScript">
-          <img src={JavaScript} />
-        </Tooltip>
-        <Tooltip title="PostgresSQL">
-          <img src={PostgresSQL} />
-        </Tooltip>
+        {techs
+          .filter((tech) => tech.isDaily)
+          .map((tech) => (
+            <Tooltip key={tech.id} title={tech.title}>
+              <img src={tech.src} />
+            </Tooltip>
+          ))}
       </S.Techs>
       <span>{t('alreadyProjects')}</span>
       <S.Techs>
-        <Tooltip title="Arduino">
-          <img src={Arduino} />
-        </Tooltip>
-        <Tooltip title="Docker">
-          <img src={Docker} />
-        </Tooltip>
-        <Tooltip title="Java">
-          <img src={Java} />
-        </Tooltip>
-        <Tooltip title="MongoDB">
-          <img src={MongoDB} />
-        </Tooltip>
-        <Tooltip title="PHP">
-          <img src={PHP} />
-        </Tooltip>
-        <Tooltip title="Python">
-          <img src={Python} />
-        </Tooltip>
-        <Tooltip title="Sass">
-          <img src={Sass} />
-        </Tooltip>
+        {techs
+          .filter((tech) => !tech.isDaily)
+          .map((tech) => (
+            <Tooltip key={tech.id} title={tech.title}>
+              <img src={tech.src} />
+            </Tooltip>
+          ))}
       </S.Techs>
     </S.Skills>
   )

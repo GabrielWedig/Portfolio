@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { colors } from '../../../constants'
 
 export const Contacts = styled.section`
   display: flex;
@@ -10,7 +9,7 @@ export const Contacts = styled.section`
 
   h2 {
     font-size: 3rem;
-    color: ${colors.white.main};
+    color: ${({ theme }) => theme.text};
     margin-bottom: 20px;
   }
 `

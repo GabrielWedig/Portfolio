@@ -1,36 +1,48 @@
-import { ArrowUpward, ContentCopy, Email, WhatsApp } from '@mui/icons-material'
+import { ArrowUpward, ContentCopy, WhatsApp } from '@mui/icons-material'
 import { Button, Chip } from '../../../components'
-import { refs } from '../../../constants'
-import * as S from './style'
 import { scrollToSection } from '../../../utils'
+import { useTranslation } from 'react-i18next'
+import { references } from '../../../public'
+import { Snackbar } from '@mui/material'
+import { useState } from 'react'
+import * as S from './style'
 
 export const Contacts = () => {
+  const [copied, setCopied] = useState<boolean>(false)
+
+  const { t } = useTranslation()
+
   const handleCopyContent = () => {
-    navigator.clipboard.writeText(refs.email)
-    //fazer um alert
+    navigator.clipboard.writeText(references.email)
+    setCopied(true)
   }
 
   return (
-    <S.Contacts id='contacts'>
-      <Chip>📬 Contatos</Chip>
-      <h2>Vamos conversar!</h2>
+    <S.Contacts id="contacts">
+      <Chip>📬 {t('contacts')}</Chip>
+      <h2>{t('letsTalk')}</h2>
       <S.Buttons>
-        <a href={refs.whatsApp} target="_blank">
+        <a href={references.whatsApp} target="_blank">
           <Button>
             <WhatsApp />
-            <span>Vamos conversar!</span>
+            <span>{t('letsTalk')}</span>
           </Button>
         </a>
         <Button onClick={handleCopyContent}>
-          <Email />
-          <span>{refs.email}</span>
           <ContentCopy />
+          <span>{references.email}</span>
         </Button>
       </S.Buttons>
       <Button btnType="transparent" onClick={() => scrollToSection('top')}>
-        <span>Voltar ao topo</span>
+        <span>{t('backTop')}</span>
         <ArrowUpward />
       </Button>
+      <Snackbar
+        open={copied}
+        autoHideDuration={5000}
+        onClose={() => setCopied(false)}
+        message={t('copied')}
+      />
     </S.Contacts>
   )
 }

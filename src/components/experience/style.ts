@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Experience = styled.div`
   border-radius: 20px;
-  border: 1px solid ${(props) => props.theme.main50};
+  border: 1px solid ${({ theme }) => theme.primary};
   width: 600px;
   height: max-content;
   padding: 30px;
@@ -12,11 +12,15 @@ export const Experience = styled.div`
 
   h4 {
     font-size: 1.5rem;
-    color: ${(props) => props.theme.main};
+    color: ${({ theme }) => theme.text};
   }
 
   p {
-    color: ${(props) => props.theme.main5};
+    color: ${({ theme }) => theme.text};
+  }
+
+  &:hover {
+    background-color: ${({ theme }) => theme.secondary};;
   }
 `
 
@@ -25,7 +29,7 @@ export const Period = styled.div`
   justify-content: space-between;
 
   span {
-    color: ${(props) => props.theme.main50};
+    color: ${({ theme }) => theme.primary};
     font-weight: 700;
   }
 `

@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client'
 import { Home } from './pages'
 import { I18nextProvider } from 'react-i18next'
 import { GlobalStyles } from './utils'
-import i18n from './utils/i18n'
+import { i18n } from './utils'
 import { ThemeProvider } from './hooks'
 
 const element = document.getElementById('root') as HTMLElement

@@ -1,8 +1,8 @@
+import { GitHub, ExpandMore, ExpandLess } from '@mui/icons-material'
+import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
 import { Button, Chip } from '..'
 import * as S from './style'
-import { GitHub, ExpandMore, ExpandLess } from '@mui/icons-material'
-import { useTranslation } from 'react-i18next'
 
 interface ProjectProps {
   title: string

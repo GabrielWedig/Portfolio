@@ -1,16 +1,16 @@
 import { Button, Chip, Project } from '../../../components'
-import * as S from './style'
 import { Web, Storage } from '@mui/icons-material'
-import projects from '../../../public/projects.json'
-import { useState } from 'react'
+import { getLanguageCode } from '../../../utils'
 import { useTranslation } from 'react-i18next'
-import { LanguageTypes } from '../../../utils/i18n'
+import { projects } from '../../../public'
+import { useState } from 'react'
+import * as S from './style'
 
 export const Projects = () => {
   const [isFront, setIsFront] = useState<boolean>(true)
 
-  const { t, i18n } = useTranslation()
-  const languageCode = i18n.language as LanguageTypes
+  const { t } = useTranslation()
+  const languageCode = getLanguageCode()
 
   return (
     <S.Projects id="projects">
@@ -28,15 +28,15 @@ export const Projects = () => {
       </S.TitleBox>
       <S.ProjectsBox>
         {projects
-          .filter((p) => p.isFront === isFront)
-          .map((p) => (
+          .filter((project) => project.isFront === isFront)
+          .map((project) => (
             <Project
-              key={p.id}
-              title={p.title}
-              description={p.description[languageCode]}
-              repo={p.repo}
-              gif={p.gif}
-              technologies={p.technologies}
+              key={project.id}
+              title={project.title}
+              description={project.description[languageCode]}
+              repo={project.repo}
+              gif={project.gif}
+              technologies={project.technologies}
             />
           ))}
       </S.ProjectsBox>
