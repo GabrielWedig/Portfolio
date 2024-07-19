@@ -16,6 +16,20 @@ export const Footer = styled.footer`
     transition: all 0.3s ease;
     color: ${({ theme }) => theme.primary};
   }
+
+  @media (max-width: 475px) {
+    padding: 30px 50px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @media (min-width: 476px) and (max-width: 768px) {
+    padding: 30px 100px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1280px) {
+    padding: 25px 150px;
+  }
 `
 
 export const Social = styled.div`

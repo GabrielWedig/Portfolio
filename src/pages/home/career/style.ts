@@ -7,18 +7,18 @@ export const Career = styled(Container)`
   align-items: center;
   gap: 20px;
   margin: 50px 0;
-
-  h2 {
-    font-size: 3rem;
-    color: ${({ theme }) => theme.title};
-    margin-bottom: 50px;
-  }
 `
 
 export const ExperiencesBox = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 25px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 50px;
+  }
 `
 
 export const Column = styled.div`
@@ -26,9 +26,15 @@ export const Column = styled.div`
   flex-direction: column;
   gap: 40px;
   align-items: center;
+  width: 40%;
 
   h3 {
     font-size: 2rem;
     color: ${({ theme }) => theme.title};
+  }
+
+  @media (max-width: 768px) {
+    gap: 20px;
+    width: 100%;
   }
 `

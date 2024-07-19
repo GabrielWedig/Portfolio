@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Experience = styled.div`
   border-radius: 20px;
   border: 1px solid ${({ theme }) => theme.primary};
-  width: 600px;
+  width: 100%;
   height: max-content;
   padding: 30px;
   display: flex;
@@ -21,7 +21,7 @@ export const Experience = styled.div`
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.secondary};;
+    background-color: ${({ theme }) => theme.secondary};
   }
 `
 
@@ -32,5 +32,6 @@ export const Period = styled.div`
   span {
     color: ${({ theme }) => theme.primary};
     font-weight: 700;
+    width: 50%;
   }
 `

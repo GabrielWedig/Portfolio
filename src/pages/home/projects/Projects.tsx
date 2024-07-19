@@ -1,4 +1,4 @@
-import { Button, Chip, Project } from '../../../components'
+import { Button, Chip, Project, Title } from '../../../components'
 import { Web, Storage } from '@mui/icons-material'
 import { getLanguageCode } from '../../../utils'
 import { useTranslation } from 'react-i18next'
@@ -16,15 +16,17 @@ export const Projects = () => {
     <S.Projects id="projects">
       <Chip>🔗 {t('portfolio')}</Chip>
       <S.TitleBox>
-        <h2>{t('worksAndProjects')}</h2>
-        <Button onClick={() => setIsFront(true)} isActive={isFront}>
-          <Web />
-          <span>Front-End</span>
-        </Button>
-        <Button onClick={() => setIsFront(false)} isActive={!isFront}>
-          <Storage />
-          <span>Back-End</span>
-        </Button>
+        <Title>{t('worksAndProjects')}</Title>
+        <S.Buttons>
+          <Button onClick={() => setIsFront(true)} isActive={isFront}>
+            <Web />
+            <span>Front-End</span>
+          </Button>
+          <Button onClick={() => setIsFront(false)} isActive={!isFront}>
+            <Storage />
+            <span>Back-End</span>
+          </Button>
+        </S.Buttons>
       </S.TitleBox>
       <S.ProjectsBox>
         {projects

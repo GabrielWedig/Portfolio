@@ -1,6 +1,6 @@
 import { WhatsApp, GitHub, LinkedIn, Download } from '@mui/icons-material'
 import { curriculum, references } from '../../../public'
-import { Button, Chip } from '../../../components'
+import { Button, Chip, Title } from '../../../components'
 import { useTranslation } from 'react-i18next'
 import { photo } from '../../../img'
 import * as S from './style'
@@ -13,7 +13,7 @@ export const About = () => {
       <S.Photo src={photo} alt="Gabriel's photo" />
       <S.Infos>
         <Chip>👋 {t('greetings')}</Chip>
-        <h1>Gabriel Garcia Wedig</h1>
+        <Title>Gabriel Garcia Wedig</Title>
         <S.Occupation>
           <span>{t('occupation')}</span>
           <a href={references.github} target="_blank">

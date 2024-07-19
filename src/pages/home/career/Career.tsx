@@ -1,4 +1,4 @@
-import { Chip, Experience } from '../../../components'
+import { Chip, Experience, Title } from '../../../components'
 import { getLanguageCode } from '../../../utils'
 import { useTranslation } from 'react-i18next'
 import { experiences } from '../../../public'
@@ -17,7 +17,7 @@ export const Career = () => {
   return (
     <S.Career id="career">
       <Chip>💼 {t('career')}</Chip>
-      <h2>{t('journey')}</h2>
+      <Title>{t('journey')}</Title>
       <S.ExperiencesBox>
         {columns.map((column) => (
           <S.Column key={column.id}>

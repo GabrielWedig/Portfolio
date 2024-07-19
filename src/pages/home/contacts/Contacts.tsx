@@ -1,5 +1,5 @@
 import { ArrowUpward, ContentCopy, WhatsApp } from '@mui/icons-material'
-import { Button, Chip } from '../../../components'
+import { Button, Chip, Title } from '../../../components'
 import { scrollToSection } from '../../../utils'
 import { useTranslation } from 'react-i18next'
 import { references } from '../../../public'
@@ -20,7 +20,7 @@ export const Contacts = () => {
   return (
     <S.Contacts id="contacts">
       <Chip>📬 {t('contacts')}</Chip>
-      <h2>{t('letsTalk')}</h2>
+      <Title>{t('letsTalk')}</Title>
       <S.Buttons>
         <a href={references.whatsApp} target="_blank">
           <Button>

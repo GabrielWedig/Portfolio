@@ -1,4 +1,4 @@
-import { Chip } from '../../../components'
+import { Chip, Title } from '../../../components'
 import { useTranslation } from 'react-i18next'
 import { Tooltip } from '@mui/material'
 import * as S from './style'
@@ -48,14 +48,14 @@ export const Skills = () => {
   return (
     <S.Skills id="techs">
       <Chip>🧑‍💻 {t('skills')}</Chip>
-      <h2>{t('techsAndSkills')}</h2>
+      <Title>{t('techsAndSkills')}</Title>
       <span>{t('dailyBasis')}</span>
       <S.Techs>
         {techs
           .filter((tech) => tech.isDaily)
           .map((tech) => (
             <Tooltip key={tech.id} title={tech.title}>
-              <img src={tech.src} />
+              <S.Technology src={tech.src} />
             </Tooltip>
           ))}
       </S.Techs>
@@ -65,7 +65,7 @@ export const Skills = () => {
           .filter((tech) => !tech.isDaily)
           .map((tech) => (
             <Tooltip key={tech.id} title={tech.title}>
-              <img src={tech.src} />
+              <S.Technology src={tech.src} />
             </Tooltip>
           ))}
       </S.Techs>

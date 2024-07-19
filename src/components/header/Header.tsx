@@ -57,7 +57,6 @@ export const Header = () => {
             {t('contact')}
           </Button>
         </S.LeftBtns>
-
         <S.RightBtns>
           <Button
             btnType="transparent"

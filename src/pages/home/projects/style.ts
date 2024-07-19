@@ -10,14 +10,19 @@ export const Projects = styled(Container)`
 
 export const TitleBox = styled.div`
   display: flex;
+  justify-content: space-between;
   gap: 20px;
   margin-bottom: 50px;
 
-  h2 {
-    font-size: 3rem;
-    color: ${({ theme }) => theme.title};
-    margin-right: auto;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    margin-bottom: 25px;
   }
+`
+
+export const Buttons = styled.div`
+  display: flex;
+  gap: 10px;
 `
 
 export const ProjectsBox = styled.div`

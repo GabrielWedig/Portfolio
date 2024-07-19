@@ -5,8 +5,22 @@ export const Presentation = styled(Container)`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 25px 0;
   gap: 100px;
-  margin: 50px 0;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    gap: 50px;
+  }
+`
+
+export const Photo = styled.img`
+  border-radius: 100%;
+  width: 450px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 export const Infos = styled.article`
@@ -16,11 +30,6 @@ export const Infos = styled.article`
 
   p {
     color: ${({ theme }) => theme.text};
-  }
-
-  h1 {
-    font-size: 3rem;
-    color: ${({ theme }) => theme.title};
   }
 `
 
@@ -38,12 +47,6 @@ export const Occupation = styled.div`
     transition: all 0.3s ease;
     color: ${({ theme }) => theme.primary};
   }
-`
-
-export const Photo = styled.img`
-  border-radius: 100%;
-  width: 450px;
-  height: 450px;
 `
 
 export const CV = styled.div`

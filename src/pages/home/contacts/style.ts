@@ -5,16 +5,17 @@ export const Contacts = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 50px 0;
-
-  h2 {
-    font-size: 3rem;
-    color: ${({ theme }) => theme.title};
-    margin-bottom: 20px;
-  }
+  margin: 50px 0;
 `
 
 export const Buttons = styled.div`
   display: flex;
   gap: 20px;
+  margin-top: 25px;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
 `

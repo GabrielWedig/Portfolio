@@ -25,7 +25,11 @@ export const Project = styled.div`
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.secondary};;
+    background-color: ${({ theme }) => theme.secondary};
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `
 
