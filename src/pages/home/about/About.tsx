@@ -1,12 +1,15 @@
 import { WhatsApp, GitHub, LinkedIn, Download } from '@mui/icons-material'
-import { curriculum, references } from '../../../public'
+import { curriculumPT, curriculumEN, references } from '../../../public'
 import { Button, Chip, Title } from '../../../components'
 import { useTranslation } from 'react-i18next'
 import { photo } from '../../../img'
 import * as S from './style'
+import { getLanguageCode } from '../../../utils'
 
 export const About = () => {
   const { t } = useTranslation()
+
+  const isPortuguese = getLanguageCode() === 'pt'
 
   return (
     <S.Presentation id="home">
@@ -31,7 +34,10 @@ export const About = () => {
               <span>{t('letsTalk')}</span>
             </Button>
           </a>
-          <a href={curriculum} download="Currículo - Gabriel Wedig">
+          <a
+            href={isPortuguese ? curriculumPT : curriculumEN}
+            download="Currículo - Gabriel Wedig"
+          >
             <Button>
               <Download />
               <span>{t('downloadCV')}</span>

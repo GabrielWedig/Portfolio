@@ -1,6 +1,7 @@
 export { default as experiences } from './experiences.json'
 export { default as projects } from './projects.json'
 export { default as references } from './references.json'
-export { default as curriculum } from './curriculum.pdf'
+export { default as curriculumEN } from './CurriculumEN.pdf'
+export { default as curriculumPT } from './CurriculumPT.pdf'
 export { default as translationEn } from './locales/en/translation.json'
 export { default as translationPt } from './locales/pt/translation.json'
