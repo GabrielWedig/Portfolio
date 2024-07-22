@@ -55,7 +55,7 @@
       "pt": "Cópia do Google Agenda sendo a principal funcionalidade um cliente marcando horário na agenda do proprietário",
       "en": "Copy of Google Calendar with the main functionality being a customer scheduling time in the owner's calendar"
     },
-    "repo": "https://github.com/GabrielWedig/BarberTechApp",
+    "repo": "https://github.com/WedigZucolotto/AppointifyApp",
     "gif": "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGs2aWh1ZHFlb3IyYnI2ZTN6eHdubXRicWtyemY4bWZpcGdybXJ0dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cV7Phk1ddRvFr09hWZ/giphy.gif",
     "technologies": ["React - Typescript", "Styled Components", "Axios"]
   },
@@ -67,7 +67,7 @@
       "pt": "Api para marcar horários, verificar se tem agenda disponível e etc.",
       "en": "API to schedule appointments, check if there is an available schedule, etc"
     },
-    "repo": "https://github.com/GabrielWedig/BarberTechApp",
+    "repo": "https://github.com/WedigZucolotto/AppointifyApi",
     "gif": "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzk1emR6MmgycjVlZXEzd3ljNWR2NHRhY2x0M3Q1bndvamE3d2p5eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FEFQmJESVyKwopvVoR/giphy.gif",
     "technologies": ["C#", "Entity Framework", ".NET", "PostgreSQL"]
   }

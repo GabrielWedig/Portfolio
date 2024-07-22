@@ -42,4 +42,11 @@ export const Technologies = styled.div`
 export const Buttons = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 580px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
 `

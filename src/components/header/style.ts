@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+interface HeaderProps {
+  showMenu: boolean
+}
+
 export const Header = styled.header`
   padding: 25px 200px;
 
@@ -39,8 +43,11 @@ export const RightBtns = styled.div`
   }
 `
 
-export const LeftBtns = styled.div`
+export const LeftBtns = styled.div<HeaderProps>`
   display: flex;
+  order: ${({ showMenu }) => showMenu ? 1 : 0};
+  flex-direction: ${({ showMenu }) => showMenu ? 'column' : 'row'};
+  align-items: center;
 
   @media (max-width: 1000px) {
     flex-wrap: wrap;
